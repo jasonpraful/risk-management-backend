@@ -2,7 +2,6 @@ import express from "express";
 import cors from "cors";
 import bodyParser from "body-parser";
 import mongoose, { mongo } from 'mongoose'
-import path from 'path';
 var app = express();
 app.use(bodyParser.json());
 app.use(cors());
@@ -24,6 +23,6 @@ app.use('/api', Users)
 app.use('/api', Projects)
 app.use('/api', Risks)
 app.use('*', function (request, response) {
-    response.sendFile(path.join(__dirname,'build','index.html'));
+    response.sendFile('build/index.html');
   });
 app.listen(PORT, () => console.log("Server up and running on port: "+PORT))

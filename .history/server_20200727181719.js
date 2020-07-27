@@ -23,7 +23,7 @@ var Risks = require('./routes/Risks')
 app.use('/api', Users)
 app.use('/api', Projects)
 app.use('/api', Risks)
-app.use('*', function (request, response) {
+app.use('/', function (request, response) {
     response.sendFile(path.join(__dirname,'build','index.html'));
   });
 app.listen(PORT, () => console.log("Server up and running on port: "+PORT))
