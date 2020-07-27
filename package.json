@@ -1,0 +1,29 @@
+{
+    "name": "risk-management-backend",
+    "version": "1.0.0",
+    "description": "Backend API for the risk management tool",
+    "main": "server.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "start": "npx nodemon --exec babel-node server.js"
+    },
+    "author": "Jason Praful Francis Xavier",
+    "license": "ISC",
+    "dependencies": {
+        "@babel/register": "^7.10.1",
+        "bcrypt": "^5.0.0",
+        "body-parser": "^1.19.0",
+        "cors": "^2.8.5",
+        "express": "^4.17.1",
+        "jsonwebtoken": "^8.5.1",
+        "mongodb": "^3.5.9",
+        "mongoose": "^5.9.19",
+        "nodemon": "^2.0.4",
+        "save-dev": "0.0.1-security"
+    },
+    "devDependencies": {
+        "@babel/core": "^7.10.2",
+        "@babel/node": "^7.10.1",
+        "@babel/preset-env": "^7.10.2"
+    }
+}
